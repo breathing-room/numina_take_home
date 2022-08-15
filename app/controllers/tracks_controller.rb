@@ -5,6 +5,10 @@ class TracksController < ApplicationController
 
   before_action :tracks_data
 
+  def index
+    @tracks_data
+  end
+
   def total_tracks
     @class = params[:track_class]
     @start_at = params[:start_at]

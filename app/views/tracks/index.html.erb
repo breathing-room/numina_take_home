@@ -1,0 +1,19 @@
+<div class="mb-5">
+  Tracks
+
+</div>
+
+<%= form_with url: total_tracks_tracks_path, method: :get do |form| %>
+  <%= form.label :track_class, "Class:", { required: true } %>
+  <%= form.text_field :track_class %>
+  <%= form.label :start_at, "Start at hour:", { required: true } %>
+  <%= form.text_field :start_at %>
+  <%= form.submit "Search" %>
+<% end %>
+
+<% if @total_tracks_by_class %>
+  <div>
+    <%= "Total tracks for #{@class} starting at #{Time.at(@start_at)}:" %>
+    <%= @total_tracks_by_class %>
+  </div>
+<% end %>
