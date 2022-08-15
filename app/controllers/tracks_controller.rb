@@ -16,10 +16,27 @@ class TracksController < ApplicationController
     )
   end
 
+  def points
+    points = Tracks::Points.(
+      tracks_data: @tracks_data,
+      track_id: points_params
+    )
+
+    render json: (
+      points
+    )
+  end
+
 private
 
   def total_tracks_params
     params.require(%i[track_class start_at])
+  end
+
+  def points_params
+    params.require(
+      :id
+    )
   end
 
   def tracks_data
