@@ -1,24 +1,3 @@
-# README
+# NOTES
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I was not able to set up a Docker container in the allotted time, nor did I finish the frontend work or add the testing I would have liked.
